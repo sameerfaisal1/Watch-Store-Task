@@ -1,4 +1,3 @@
-import Collectionbox from "@/Components/collectionbox";
 import Footer from "@/Components/Footer";
 import AllCollections from "@/Pages/AllCollections";
 import CreateCollection from "@/Pages/CreateCollection";
