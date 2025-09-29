@@ -1,0 +1,21 @@
+.allCollectionContainer {
+  width: 1264px;
+  min-height: 542px;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.CollectionItems {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  /* flex-wrap: wrap; */
+}
