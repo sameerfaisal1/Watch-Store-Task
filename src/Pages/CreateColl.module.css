@@ -3,18 +3,28 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 40px; 
+  text-align: center; /
 }
 
 .heading {
   font-size: 48px;
+  font-weight: bold;
 }
+
 .descrp {
   font-size: 24px;
   margin-top: 20px;
+  max-width: 700px; 
 }
 
 .boxes {
+  background: linear-gradient(to right, #000000 40%, #5a0202);
   margin-top: 50px;
-  gap: 90px;
   display: flex;
+  gap: 90px;
+  justify-content: center; 
+  align-items: center;
+  padding: 40px; 
+  border-radius: 20px; 
 }
