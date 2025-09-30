@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 .mainContainer {
   background: linear-gradient(to right, #000000 40%, #5a0202);
   color: #fff;
@@ -22,27 +24,34 @@
 .logoSection {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
   margin-bottom: 30px;
 }
 
 .logoX {
   font-size: 30px;
   margin: 0 10px;
+  color: #ffffff;
+  opacity: 50%;
+  font-family: "Poppins", sans-serif;
 }
 
 .heading {
-  font-size: 42px;
-  font-weight: 800;
-  line-height: 1.2;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 82px;
   margin-bottom: 20px;
+  letter-spacing: -2px;
+  font-family: "Poppins", sans-serif;
 }
 
 .description {
-  color: #aaa;
-  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(226, 226, 226, 1);
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
   margin-bottom: 40px;
-  max-width: 500px;
 }
 
 .buttons {
@@ -85,6 +94,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px salmon;
 }
 .productWrapper {
   position: relative;
@@ -112,12 +122,39 @@
   object-fit: contain;
   border-radius: 12px;
 }
-.card {
-  background-color: #111;
+/* .card {
+  border: 0.88px solid;
+
   border-radius: 16px;
-  padding: 15px; /* pehle 20px tha, kam kiya */
-  width: 380px; /* pehle 320px tha, size bada kiya */
+  border-image: linear-gradient(to bottom right, blue, red) 4;
+
+  background-color: #111;
+  padding: 15px;
+  width: 380px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+} */
+
+.card {
+  position: relative;
+  border-radius: 16px;
+  background: #111; /* inner background */
+  padding: 15px;
+  width: 380px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 0.88px;
+  background: linear-gradient(to bottom right, #ff3737, black, black, #18b2de);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 .productWrapper {
@@ -174,9 +211,9 @@
   color: #aaa;
 }
 
-.pricetitle{
-    margin-top: 10px;
-    margin-left: 6px;
+.pricetitle {
+  margin-top: 10px;
+  margin-left: 6px;
 }
 
 .avatarWrapper {

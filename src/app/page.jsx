@@ -9,8 +9,8 @@ const page = () => {
   return (
     <div>
       <HeroSection />
-      <AllCollections />
       <CreateCollection />
+      <AllCollections />
       <Footer />
     </div>
   );

@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className={styles.leftSection}>
         <div className={styles.logoSection}>
           <Image src="/logo.png" width={141} height={99} alt="Nalikes logo" />
-          <span className={styles.logoX}>×</span>
+          <span className={styles.logoX}>X</span>
           <Image
             src="/clocksmith.png"
             width={246}
@@ -55,7 +55,6 @@ const HeroSection = () => {
           {/* Card Footer */}
           <div className={styles.cardFooter}>
             <div className={styles.cardInfo}>
-             
               <div className={styles.pricetitle}>
                 <p className={styles.cardTitle}>Blue Ice</p>
                 <p className={styles.cardPrice}>0.21 Weth</p>
