@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 .mainContainer {
-  background: linear-gradient(to right, #000000 40%, #5a0202);
+  background: radial-gradient(circle at 60% 20%, #5a0202, transparent 30%),
+    radial-gradient(circle at 90% 90%, #178cec, transparent 17%), black;
+
   color: #fff;
-  /* width: 100%; hata do */
+
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -115,29 +117,18 @@
 
 .productImage {
   position: absolute;
-  top: 20px; /* thoda adjust karo jaise chahiye */
+  top: 20px;
   left: 20px;
   width: 380px;
   height: 380px;
   object-fit: contain;
   border-radius: 12px;
 }
-/* .card {
-  border: 0.88px solid;
-
-  border-radius: 16px;
-  border-image: linear-gradient(to bottom right, blue, red) 4;
-
-  background-color: #111;
-  padding: 15px;
-  width: 380px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-} */
 
 .card {
   position: relative;
   border-radius: 16px;
-  background: #111; /* inner background */
+  background: #111;
   padding: 15px;
   width: 380px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -159,9 +150,9 @@
 
 .productWrapper {
   position: relative;
-  width: 340px; /* pehle 320px tha */
-  height: 340px; /* pehle 320px tha */
-  margin-bottom: 10px; /* gap kam kiya */
+  width: 340px;
+  height: 340px;
+  margin-bottom: 10px;
 }
 
 .productBg {
@@ -176,7 +167,7 @@
 
 .productImage {
   position: absolute;
-  top: 15px; /* thoda kam kiya */
+  top: 15px;
   left: 15px;
   width: 310px;
   height: 310px;
@@ -190,13 +181,13 @@
   align-items: center;
   color: #ccc;
   font-size: 14px;
-  margin-top: 8px; /* thoda compact feel */
+  margin-top: 8px;
 }
 
 .cardInfo {
   display: flex;
   align-items: center;
-  gap: 8px; /* pehle 10px tha, kam kiya */
+  gap: 8px;
 }
 
 .cardTitle {
