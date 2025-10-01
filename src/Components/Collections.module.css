@@ -41,7 +41,6 @@
   object-fit: contain;
 }
 
-/* text styles */
 .cardText {
   display: flex;
   justify-content: space-between;
@@ -49,12 +48,15 @@
   font-size: 1vw;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  margin-top: 2vw;
+  margin-bottom: -0.5vw;
 }
 
 .marginline {
   margin: 1.5vw 0;
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5vw;
 }
 
 .Available {
@@ -88,13 +90,14 @@
 /* -------- Responsive (max 600px) -------- */
 @media (max-width: 600px) {
   .CollectionCard {
-    width: 90%; /* full width mobile pe */
+    height: auto;
+    width: 75%;
     padding: 4vw;
     gap: 3vw;
   }
 
   .productWrapper {
-    height: 60vw; /* height zyada rakhna for mobile */
+    height: 60vw;
     border-radius: 3vw;
   }
 

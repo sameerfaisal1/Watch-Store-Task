@@ -32,6 +32,10 @@
   color: #ccc;
 }
 
+/* .wrap {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(60px);
+} */
 .boxes {
   position: relative;
   margin-top: 4vw;

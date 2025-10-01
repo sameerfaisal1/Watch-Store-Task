@@ -34,11 +34,12 @@
   align-items: center;
   gap: 1.2vw;
   font-size: 1vw;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .powerdBy h3 {
   color: #969696;
+  font-family: "Poppins", sans-serif;
 }
 
 .clock {
@@ -57,6 +58,7 @@
   font-size: 1vw;
   margin-top: 10px;
   color: #848484;
+  font-family: "Poppins", sans-serif;
 }
 
 /* -------- Responsive 600px -------- */
