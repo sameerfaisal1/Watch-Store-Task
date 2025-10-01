@@ -3,21 +3,18 @@
 .mainContainer {
   background: radial-gradient(circle at 60% 20%, #5a0202, transparent 30%),
     radial-gradient(circle at 90% 90%, #178cec, transparent 17%), black;
-
   color: #fff;
-
-  min-height: 100vh;
+  width: 94.5vw;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 60px 80px;
-  border-radius: 20px;
+  padding: 4vw 6vw;
+  border-radius: 1.5vw;
   margin: 30px;
 }
 
 .leftSection {
-  flex: 1;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,48 +23,48 @@
 .logoSection {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
+  gap: 2vw;
+  margin-bottom: 2vw;
 }
 
 .logoX {
-  font-size: 30px;
-  margin: 0 10px;
+  font-size: 2vw;
+  margin: 0 0.75vw;
   color: #ffffff;
   opacity: 50%;
   font-family: "Poppins", sans-serif;
 }
 
 .heading {
-  font-size: 62px;
-  font-weight: 600;
-  line-height: 82px;
-  margin-bottom: 20px;
-  letter-spacing: -2px;
+  font-size: 4.75vw;
+  font-weight: 570;
+  line-height: 6vw;
+  margin-bottom: 1vw;
   font-family: "Poppins", sans-serif;
 }
 
 .description {
   font-family: "Poppins", sans-serif;
   color: rgba(226, 226, 226, 1);
-  font-size: 20px;
-  line-height: 30px;
+  width: 90%;
+  font-size: 1.5vw;
+  line-height: 2.2vw;
   letter-spacing: 0.5px;
-  margin-bottom: 40px;
+  margin-bottom: 3vw;
 }
 
 .buttons {
   display: flex;
-  gap: 15px;
+  gap: 1.5vw;
 }
 
 .mintBtn {
   background-color: #e63946;
   color: #fff;
   border: none;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 1.1vw 2.1vw;
+  border-radius: 1vw;
+  font-size: 1.2vw;
   font-weight: 600;
   cursor: pointer;
 }
@@ -80,9 +77,9 @@
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+  font-size: 1.2vw;
   font-weight: 600;
   cursor: pointer;
 }
@@ -92,46 +89,43 @@
 }
 
 .rightSection {
-  flex: 1;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px salmon;
 }
+
 .productWrapper {
   position: relative;
-  width: 450px;
-  height: 450px;
-  margin-bottom: 15px;
+  width: 100%;
+  max-width: 420px; /* responsive max size */
+  aspect-ratio: 1/1; /* height auto maintain */
 }
 
 .productBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 290px;
-  height: 320px;
-  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw;
   object-fit: cover;
 }
 
 .productImage {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 380px;
-  height: 380px;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 1vw;
 }
 
 .card {
   position: relative;
-  border-radius: 16px;
+  border-radius: 1vw;
   background: #111;
-  padding: 15px;
-  width: 380px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 1.2vw;
+  width: 74%;
+  box-shadow: 0 2vw 2vw rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -139,8 +133,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 16px;
-  padding: 0.88px;
+  border-radius: 1.15vw;
+  padding: 0.1vw;
   background: linear-gradient(to bottom right, #ff3737, black, black, #18b2de);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -148,40 +142,13 @@
   pointer-events: none;
 }
 
-.productWrapper {
-  position: relative;
-  width: 340px;
-  height: 340px;
-  margin-bottom: 10px;
-}
-
-.productBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 340px;
-  height: 340px;
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-.productImage {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 310px;
-  height: 310px;
-  object-fit: contain;
-  border-radius: 12px;
-}
-
 .cardFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #ccc;
-  font-size: 14px;
-  margin-top: 8px;
+  font-size: 1vw;
+  margin-top: 1vw;
 }
 
 .cardInfo {
@@ -191,56 +158,120 @@
 }
 
 .cardTitle {
-  font-size: 20px;
+  font-size: 1.3vw;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 2px;
+  margin-bottom: 0.6vw;
 }
 
 .cardPrice {
-  font-size: 16px;
+  font-size: 1vw;
   color: #aaa;
 }
 
 .pricetitle {
-  margin-top: 10px;
-  margin-left: 6px;
+  margin-top: 1vw;
+  margin-left: 0.3vw;
 }
 
-.avatarWrapper {
-  position: relative;
-  width: 40px;
-  height: 40px;
-}
+/* ============================= */
+/*   RESPONSIVE FOR <= 600px     */
+/* ============================= */
+@media (max-width: 600px) {
+  .mainContainer {
+    flex-direction: column;
+    width: 90vw;
+    padding: 6vw 4vw;
+    margin: 15px auto;
+    border-radius: 4vw;
+  }
 
-.avatarBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-}
+  .leftSection {
+    width: 100%;
+    /* text-align: center; */
+    margin-bottom: 5vw;
+  }
 
-.userAvatar {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
+  .logoSection {
+    /* justify-content: center; */
+    gap: 4vw;
+    margin-bottom: 4vw;
+  }
 
-.cardMeta {
-  text-align: right;
-}
+  .logo1 {
+    height: 8vh;
+    width: 18vw;
+  }
 
-.cardMeta p {
-  font-size: 12px;
-  color: #aaa;
-}
+  .logo2 {
+    height: 6vh;
+    width: 20vw;
+  }
 
-.cardMeta span {
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
+  .logoX {
+    font-size: 5vw;
+  }
+
+  .heading {
+    font-size: 8vw;
+    line-height: 10vw;
+    margin-bottom: 3vw;
+  }
+
+  .description {
+    font-size: 3.5vw;
+    line-height: 5vw;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 3vw;
+    align-items: center;
+  }
+
+  .mintBtn,
+  .viewBtn {
+    font-size: 3.5vw;
+    padding: 3vw 6vw;
+    border-radius: 2vw;
+    width: 80%;
+  }
+
+  .rightSection {
+    width: 100%;
+  }
+
+  .productWrapper {
+    max-width: 100%;
+    /* aspect-ratio: 1/1; */
+  }
+
+  .productImage {
+    top: 8%;
+    left: 8%;
+    width: 90%;
+    height: auto;
+  }
+
+  .card {
+    width: 95%;
+    padding: 4vw;
+    border-radius: 3vw;
+  }
+
+  .cardTitle {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .cardPrice {
+    font-size: 4vw;
+  }
+
+  .cardFooter {
+    font-size: 3.5vw;
+    margin-top: 3vw;
+  }
 }

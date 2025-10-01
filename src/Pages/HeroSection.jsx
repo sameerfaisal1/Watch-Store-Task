@@ -8,12 +8,19 @@ const HeroSection = () => {
       {/* Left Section */}
       <div className={styles.leftSection}>
         <div className={styles.logoSection}>
-          <Image src="/logo.png" width={141} height={99} alt="Nalikes logo" />
+          <Image
+            src="/logo.png"
+            width={141}
+            height={99}
+            className={styles.logo1}
+            alt="Nalikes logo"
+          />
           <span className={styles.logoX}>X</span>
           <Image
             src="/clocksmith.png"
             width={246}
             height={56}
+            className={styles.logo2}
             alt="Clocksmith logo"
           />
         </div>
