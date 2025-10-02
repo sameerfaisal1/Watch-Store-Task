@@ -8,9 +8,9 @@ const Footer = () => {
       <div className={styles.FooterContent}>
         {/* Social Icons */}
         <div className={styles.ImagesSection}>
-          <Image src="/social-icon.png" width={37} height={37} alt="Social 1" />
-          <Image src="/social-icon.png" width={37} height={37} alt="Social 2" />
-          <Image src="/social-icon.png" width={37} height={37} alt="Social 3" />
+          <Image src="/social.png" width={37} height={37} alt="Social 1" />
+          <Image src="/social.png" width={37} height={37} alt="Social 2" />
+          <Image src="/social.png" width={37} height={37} alt="Social 3" />
         </div>
 
         {/* Powered By */}
