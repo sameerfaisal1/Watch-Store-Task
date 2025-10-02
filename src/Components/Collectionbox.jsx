@@ -6,7 +6,13 @@ const Collectionbox = ({ imgsrc, text }) => {
   return (
     <div className={styles.container}>
       <div className={styles.box}>
-        <Image src={imgsrc} height={56} width={56} alt="image" />
+        <Image
+          src={imgsrc}
+          height={56}
+          width={56}
+          alt="image"
+          className={styles.img}
+        />
       </div>
       <p className={styles.text}>{text}</p>
     </div>
