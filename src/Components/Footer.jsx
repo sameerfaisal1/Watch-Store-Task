@@ -29,7 +29,7 @@ const Footer = () => {
         <div className={styles.clock}>
           <Image
             src="/clocksmith.png"
-            width={170}
+            width={150}
             height={55}
             alt="Clocksmith"
           />
