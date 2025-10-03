@@ -173,6 +173,13 @@
   margin-top: 1vw;
   margin-left: 0.3vw;
 }
+.cardMeta span {
+  font-weight: 600;
+}
+
+.cardMeta p {
+  font-weight: 600;
+}
 
 /* ============================= */
 /*   RESPONSIVE FOR <= 600px     */

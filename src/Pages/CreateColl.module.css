@@ -105,7 +105,7 @@
       rgba(224, 81, 81, 0.3),
       rgba(149, 48, 237, 0.3),
       rgba(15, 15, 2, 0.2)
-    );
-    backdrop-filter: blur;
+    ); /*
+    backdrop-filter: blur; */
   }
 }

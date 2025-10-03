@@ -17,7 +17,7 @@ const Footer = () => {
         <div className={styles.powerdBy}>
           <h3>POWERED BY</h3>
           <Image
-            src="/logo.png"
+            src="/footerlogo.png"
             className={styles.logo}
             width={78}
             height={55}
@@ -30,7 +30,7 @@ const Footer = () => {
           <Image
             src="/clocksmith.png"
             width={150}
-            height={55}
+            height={40}
             alt="Clocksmith"
           />
         </div>
